@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Eine Schüler-Website über Schulproteste, Mitbestimmung und aktuelle Debatten.">
+<title>Schülerstimme | Schulproteste</title>
+<style>
+:root{--bg:#0b1020;--panel:#151d33;--ink:#f4f7ff;--muted:#b9c4dc;--accent:#8bffcf;--accent2:#8eb8ff;--line:#2c3855}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+a{color:var(--accent);text-underline-offset:4px}a:hover{color:#fff}header{padding:20px 7%;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);position:sticky;top:0;background:#0b1020ee;backdrop-filter:blur(12px);z-index:5}
+.logo{font-weight:900;letter-spacing:.04em}.logo span{color:var(--accent)}nav{display:flex;gap:18px;flex-wrap:wrap}nav a{text-decoration:none;color:var(--muted);font-size:.92rem}
+main{max-width:1100px;margin:auto;padding:0 24px}.hero{padding:84px 0 64px;display:grid;grid-template-columns:1.4fr .8fr;gap:36px;align-items:center}
+.eyebrow{color:var(--accent);text-transform:uppercase;letter-spacing:.15em;font-size:.78rem;font-weight:800}
+h1{font-size:clamp(2.6rem,7vw,5.4rem);line-height:1.02;letter-spacing:-.055em;margin:16px 0 24px}h1 em{font-style:normal;color:var(--accent)}
+.lead{font-size:1.15rem;color:var(--muted);max-width:650px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:12px 17px;border-radius:12px;text-decoration:none;font-weight:750;border:1px solid var(--line)}.btn.primary{background:var(--accent);color:#07131a;border-color:var(--accent)}.btn.secondary{color:var(--ink)}
+.hero-card{background:linear-gradient(145deg,#1d2b49,#131a2c);border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:0 25px 70px #0004}.hero-card .symbol{font-size:3rem}.hero-card h2{margin:12px 0 8px}.hero-card p{color:var(--muted);margin-bottom:0}
+section{padding:48px 0;border-top:1px solid var(--line)}.section-head{max-width:720px;margin-bottom:25px}h2{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.15;margin:8px 0 14px;letter-spacing:-.03em}h3{margin:8px 0}.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px}.card p{color:var(--muted)}.tag{display:inline-block;color:var(--accent);font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.timeline{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}.timeline strong{color:var(--accent)}
+.profile{display:grid;grid-template-columns:.75fr 1.25fr;gap:24px;align-items:stretch}.profile-mark{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:linear-gradient(145deg,#203b48,#18223b);border-radius:22px;padding:28px;border:1px solid var(--line)}.avatar{width:90px;height:90px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#07131a;font-size:2rem;font-weight:900;margin-bottom:12px}
+.note{border-left:3px solid var(--accent2);padding:12px 16px;background:#141d31;border-radius:0 12px 12px 0;color:var(--muted)}
+.sources li{margin:10px 0;color:var(--muted)}footer{padding:32px 24px;text-align:center;color:var(--muted);border-top:1px solid var(--line);font-size:.9rem}
+@media(max-width:760px){header{align-items:flex-start;flex-direction:column}nav{gap:12px}.hero,.profile{grid-template-columns:1fr}.hero{padding-top:54px}.grid{grid-template-columns:1fr}.timeline{grid-template-columns:1fr;gap:3px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">SCHÜLER<span>STIMME.</span></div>
+  <nav aria-label="Hauptnavigation">
+    <a href="#thema">Das Thema</a><a href="#hintergrund">Hintergrund</a><a href="#maxime">Über Maxime</a><a href="#quellen">Quellen</a>
+  </nav>
+</header>
+<main>
+  <div class="hero">
+    <div>
+      <div class="eyebrow">Junge Stimmen. Wichtige Fragen.</div>
+      <h1>Schule ist mehr als <em>Unterricht.</em></h1>
+      <p class="lead">Warum gehen Schülerinnen und Schüler auf die Straße? Hier findest du verständliche Informationen über Schulproteste, politische Mitbestimmung und die Debatte um den neuen Wehrdienst.</p>
+      <div class="buttons"><a class="btn primary" href="#thema">Thema entdecken ↓</a><a class="btn secondary" href="#quellen">Quellen ansehen ↗</a></div>
+    </div>
+    <aside class="hero-card">
+      <div class="symbol" aria-hidden="true">✊📣</div>
+      <h2>Deine Stimme zählt.</h2>
+      <p>Proteste sind eine Möglichkeit, öffentlich auf Anliegen aufmerksam zu machen. Informieren, diskutieren und andere respektieren gehören dazu.</p>
+    </aside>
+  </div>
+
+  <section id="thema">
+    <div class="section-head"><div class="eyebrow">01 / Das Thema</div><h2>Was sind Schulproteste?</h2><p class="muted">Schulproteste sind Aktionen, bei denen Schülerinnen und Schüler auf politische oder schulische Themen aufmerksam machen. Die Gründe sind unterschiedlich – zum Beispiel Klima, Bildung, Frieden oder Fragen rund um den Wehrdienst.</p></div>
+    <div class="grid">
+      <article class="card"><div class="tag">Mitbestimmung</div><h3>Gehört werden</h3><p>Junge Menschen wollen zeigen, dass politische Entscheidungen auch ihre Zukunft betreffen.</p></article>
+      <article class="card"><div class="tag">Öffentlichkeit</div><h3>Aufmerksamkeit schaffen</h3><p>Demonstrationen, Plakate und Gespräche können Themen in die öffentliche Diskussion bringen.</p></article>
+      <article class="card"><div class="tag">Respekt</div><h3>Friedlich diskutieren</h3><p>Menschen können unterschiedliche Meinungen haben. Sachliche Argumente und ein respektvoller Umgang sind wichtig.</p></article>
+    </div>
+  </section>
+
+  <section id="hintergrund">
+    <div class="section-head"><div class="eyebrow">02 / Aktueller Hintergrund</div><h2>Schülerproteste gegen Wehrpflicht</h2><p class="muted">Ein Schwerpunkt der jüngeren Schulproteste in Deutschland ist die Kritik am neuen Wehrdienst und an einer möglichen späteren Wiedereinführung einer Wehrpflicht.</p></div>
+    <div class="timeline"><strong>Seit 2026</strong><div><h3>Neuer Wehrdienst</h3><p class="muted">Das Wehrdienstgesetz trat Anfang 2026 in Kraft. Nach Berichten von ZDF und Deutschlandfunk sieht das Modell verpflichtende Fragebögen für Männer und eine verpflichtende Musterung für Männer ab Jahrgang 2008 vor; der Wehrdienst selbst bleibt zunächst freiwillig.</p></div></div>
+    <div class="timeline"><strong>5. März 2026</strong><div><h3>Bundesweite Proteste</h3><p class="muted">Laut ZDF berichteten die Veranstalter von rund 50.000 Teilnehmenden in etwa 150 Städten. Solche Zahlen können je nach Quelle und Zählweise abweichen.</p></div></div>
+    <div class="timeline"><strong>25. September 2026</strong><div><h3>Weitere Demonstrationen</h3><p class="muted">Tagesschau berichtete von Protesten in vielen Städten; die Initiative sprach von mehr als 45.000 Teilnehmenden in rund 100 Städten. Der Protest richtete sich gegen eine mögliche Wehrpflicht und verpflichtende Musterungen.</p></div></div>
+    <div class="note"><strong>Wichtig:</strong> Diese Seite informiert und wirbt nicht dafür, unentschuldigt dem Unterricht fernzubleiben. Regeln zur Schulpflicht und mögliche Folgen unterscheiden sich je nach Bundesland und Situation. Informiere dich bei deiner Schule und einer vertrauenswürdigen erwachsenen Person.</div>
+  </section>
+
+  <section>
+    <div class="section-head"><div class="eyebrow">03 / Fragen zum Thema</div><h2>Warum protestieren Jugendliche?</h2></div>
+    <div class="grid">
+      <article class="card"><h3>„Es geht um meine Zukunft.“</h3><p>Viele Jugendliche möchten bei Entscheidungen mitreden, die ihr Leben langfristig beeinflussen.</p></article>
+      <article class="card"><h3>„Ich möchte informiert sein.“</h3><p>Ein Protest kann Aufmerksamkeit schaffen – wichtig bleibt, Forderungen und Gegenargumente zu prüfen.</p></article>
+      <article class="card"><h3>„Andere sehen das anders.“</h3><p>In einer Demokratie gehören unterschiedliche Positionen dazu. Diskussionen sollten auf überprüfbaren Informationen beruhen.</p></article>
+    </div>
+  </section>
+
+  <section id="maxime">
+    <div class="section-head"><div class="eyebrow">04 / Über den Ersteller</div><h2>Das ist Maxime</h2></div>
+    <div class="profile">
+      <div class="profile-mark"><div class="avatar" aria-hidden="true">M</div><h3>Maxime</h3><p class="muted">Realschüler · Website-Projekt</p></div>
+      <div class="card"><h3>Warum diese Website?</h3><p>Ich heiße Maxime und bin Realschüler. Mit dieser Website beschäftige ich mich mit Schulprotesten und damit, warum junge Menschen ihre Meinung öffentlich äußern.</p><p>Mir ist wichtig, Informationen verständlich darzustellen und unterschiedliche Sichtweisen zu berücksichtigen.</p><p class="muted">Hinweis: Über Maxime sind hier nur Angaben enthalten, die für dieses Projekt bekannt sind. Weitere persönliche Eigenschaften, Hobbys oder Meinungen wurden nicht erfunden.</p></div>
+    </div>
+  </section>
+
+  <section id="quellen">
+    <div class="section-head"><div class="eyebrow">05 / Weiter informieren</div><h2>Quellen & Links</h2><p class="muted">Die folgenden Berichte wurden für die Hintergrundinformationen verwendet. Öffne die Quellen, um Details und aktuelle Entwicklungen selbst zu prüfen.</p></div>
+    <ul class="sources">
+      <li><a href="https://www.tagesschau.de/inland/gesellschaft/wehrpflicht-proteste-schueler-100.html" target="_blank" rel="noopener noreferrer">tagesschau – Bundesweite Proteste gegen Wehrpflicht (25.09.2026)</a></li>
+      <li><a href="https://www.zdfheute.de/politik/deutschland/schueler-proteste-wehrpflicht-bundeswehr-100.html" target="_blank" rel="noopener noreferrer">ZDFheute – Schüler protestieren gegen mögliche Rückkehr der Wehrpflicht (08.05.2026)</a></li>
+      <li><a href="https://www1.wdr.de/nachrichten/schulstreiks-wehrpflicht-100.html" target="_blank" rel="noopener noreferrer">WDR – Schüler protestieren gegen Wehrdienst, auch in NRW (05.03.2026)</a></li>
+      <li><a href="https://fridaysforfuture.de/streiktermine/faq/" target="_blank" rel="noopener noreferrer">Fridays for Future – FAQ zu Streiks und schulischen Regeln</a></li>
+    </ul>
+  </section>
+</main>
+<footer>© 2026 Schülerstimme · Schulprojekt von Maxime · Informieren. Nachdenken. Mitreden.</footer>
+</body>
+</html>
